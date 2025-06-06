@@ -1,0 +1,24 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "myApp",
+  "license": "ISC",
+  "author": "Anggara",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "NODE_ENV=production electron .",
+    "dev": "NODE_ENV=development electron .",
+    "sass": "sass --watch ./src/views/scss/style.scss ./src/views/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^36.0.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "dotenv": "^16.5.0",
+    "sass": "^1.87.0"
+  }
+}

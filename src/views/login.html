@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>MyApp</title>
+  </head>
+  <body>
+    <div class="container p-5">
+      <img
+        src="./img/me.jpg"
+        class="rounded-circle w-25 mx-auto d-block border border-black"
+        alt="..."
+      />
+      <form onsubmit="checkPassword()">
+        <center>
+          <label class="form-label fs-3 my-3"><b>Anggara</b></label>
+        </center>
+        <div class="form-floating mx-auto w-50">
+          <input
+            type="password"
+            class="form-control text-center"
+            id="password"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button type="submit" class="btn invisible">Confirm</button>
+      </form>
+    </div>
+    <div class="card w-100 position-absolute bottom-0">
+      <div class="card-header text-center"><b>Anggara | 2025 </b></div>
+    </div>
+
+    <script>
+      const { ipcRenderer } = require("electron");
+
+      function checkPassword() {
+        const password = document.getElementById("password");
+        ipcRenderer.send("check-password", password.value);
+      }
+
+      ipcRenderer.on("wrong-password", (event, msg) => {
+        alert(msg);
+      });
+    </script>
+  </body>
+</html>
