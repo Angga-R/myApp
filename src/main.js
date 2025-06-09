@@ -26,7 +26,7 @@ function createMainWindow() {
     },
   });
 
-  mainWindow.loadFile("src/views/p.html");
+  mainWindow.loadFile("src/views/main.html");
 }
 
 app.whenReady().then(() => {

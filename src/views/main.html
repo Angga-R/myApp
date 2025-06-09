@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/sidebar.min.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav sidebar sidebar-light accordion"
+        id="accordionSidebar"
+      >
+        <span
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+        >
+          <div class="sidebar-brand-text mx-3">MyApp</div>
+        </span>
+        <hr class="sidebar-divider my-0" />
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            onclick="loadContent('content', 'dashboard.html')"
+          >
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+        <hr class="sidebar-divider" />
+        <div class="sidebar-heading">Data Akun</div>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            onclick="loadContent('content', 'data-akun-bank.html')"
+          >
+            <i class="fas fa-users"></i>
+            <span>Data akun bank</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Data akun sosial media</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Data akun game</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Data akun lainnya</span>
+          </a>
+        </li>
+        <hr class="sidebar-divider" />
+        <div class="sidebar-heading">Keuangan</div>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Simpanan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Tabungan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/admin_message">
+            <i class="fas fa-envelope"></i>
+            <span>Hutang</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/admin_message">
+            <i class="fas fa-envelope"></i>
+            <span>Pinjaman</span>
+          </a>
+        </li>
+        <hr class="sidebar-divider" />
+        <div class="sidebar-heading">Code Sheet</div>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Java</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Javascript</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>MySQL</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>Redis</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/data_user">
+            <i class="fas fa-users"></i>
+            <span>MongoDB</span>
+          </a>
+        </li>
+        <hr class="sidebar-divider" />
+        <div class="version">Version 1.0.0</div>
+      </ul>
+      <!-- Sidebar -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- TopBar -->
+        <nav
+          class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top"
+        ></nav>
+        <!-- Topbar -->
+        <!-- Content -->
+        <div id="content"></div>
+        <!-- Content -->
+      </div>
+    </div>
+
+    <script src="../services/page-service.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
