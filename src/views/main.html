@@ -8,6 +8,11 @@
       href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/sidebar.min.css" />
+    <style>
+      .nav-item:hover {
+        cursor: pointer;
+      }
+    </style>
     <title>Index</title>
   </head>
   <body>
@@ -26,7 +31,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('content', 'dashboard.html')"
+            onclick="loadContent('dashboard.html', 'Dashboard')"
           >
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a
@@ -37,26 +42,35 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('content', 'data-akun-bank.html')"
+            onclick="loadContent('data-akun-bank.html', 'Data akun bank')"
           >
             <i class="fas fa-users"></i>
             <span>Data akun bank</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/admin/data_user">
+          <a
+            class="nav-link"
+            onclick="loadContent('data-akun-sosmed.html', 'Data akun sosial media')"
+          >
             <i class="fas fa-users"></i>
             <span>Data akun sosial media</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/admin/data_user">
+          <a
+            class="nav-link"
+            onclick="loadContent('data-akun-game.html', 'Data akun game')"
+          >
             <i class="fas fa-users"></i>
             <span>Data akun game</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/admin/data_user">
+          <a
+            class="nav-link"
+            onclick="loadContent('data-akun-lainnya.html', 'Data akun lainnya')"
+          >
             <i class="fas fa-users"></i>
             <span>Data akun lainnya</span>
           </a>
@@ -129,9 +143,27 @@
           class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top"
         ></nav>
         <!-- Topbar -->
-        <!-- Content -->
-        <div id="content"></div>
-        <!-- Content -->
+
+        <div class="container-fluid" id="container-wrapper">
+          <div
+            class="d-sm-flex align-items-center justify-content-between mb-4"
+          >
+            <h1 class="h3 mb-0 text-gray-800" id="main-title">My App</h1>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active">MyApp</li>
+              <li
+                class="breadcrumb-item active"
+                aria-current="page"
+                id="page-position"
+              >
+                Home
+              </li>
+            </ol>
+          </div>
+          <!-- Content -->
+          <div id="content"></div>
+          <!-- Content -->
+        </div>
       </div>
     </div>
 

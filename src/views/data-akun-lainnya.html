@@ -1,0 +1,132 @@
+<button
+  type="button"
+  class="btn btn-primary mb-3"
+  data-bs-toggle="modal"
+  data-bs-target="#modalInputAkun"
+>
+  Tambah Akun
+</button>
+
+<div class="card mb-3">
+  <div class="card-header">Data akun lainnya</div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Platform</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">No. HP</th>
+        <th scope="col">Password</th>
+        <th scope="col">Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Vercell</td>
+        <td>Angga R</td>
+        <td>testemail047@gmail.com</td>
+        <td>085721333000</td>
+        <td>rahasia</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Apache</td>
+        <td>Anggara</td>
+        <td>testemail047-2@gmail.com</td>
+        <td>085721333000</td>
+        <td>RahasiaSayang</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>SuiSui</td>
+        <td>Angga X</td>
+        <td>testemail047-3@gmail.com</td>
+        <td>085721333000</td>
+        <td>RahasiaSayang</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal Input Akun -->
+<div
+  class="modal fade"
+  id="modalInputAkun"
+  tabindex="-1"
+  aria-labelledby="modalInputAkunLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalInputAkunLabel">Tambah akun</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <label for="inputPlatform" class="col-sm-2 col-form-label"
+            >Platform</label
+          >
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPlatform" />
+          </div>
+        </div>
+        <hr />
+        <div class="row mb-3">
+          <label for="inputUsername" class="col-sm-2 col-form-label"
+            >Username</label
+          >
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputUsername" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputTelp" class="col-sm-2 col-form-label">No. HP</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputTelp" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword" class="col-sm-2 col-form-label"
+            >Password</label
+          >
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Tutup
+        </button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
