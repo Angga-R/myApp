@@ -1,0 +1,94 @@
+<button
+  type="button"
+  class="btn btn-primary mb-3"
+  data-bs-toggle="modal"
+  data-bs-target="#modalInputHutang"
+>
+  Tambah
+</button>
+
+<div class="card mb-3">
+  <div class="card-header fw-bold">Muhammad Wildan Rasyid</div>
+  <div class="card-body text-secondary">
+    <h2>
+      <span class="border rounded border-secondary border-2 p-1">Rp.</span>
+      200.000 / 40.000.000
+      <button type="button" class="btn btn-sm btn-outline-primary">
+        Update
+      </button>
+    </h2>
+  </div>
+  <div class="card-footer text-end">
+    <button type="button" class="btn btn-outline-danger btn-sm">Hapus</button>
+    <button type="button" class="btn btn-outline-success btn-sm">
+      Selesai
+    </button>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-header fw-bold">桐ヶ谷 和人</div>
+  <div class="card-body text-secondary">
+    <h2>
+      <span class="border rounded border-secondary border-2 p-1">Rp.</span>
+      2.000.000 / 400.000.000
+      <button type="button" class="btn btn-sm btn-outline-primary">
+        Update
+      </button>
+    </h2>
+  </div>
+  <div class="card-footer text-end">
+    <button type="button" class="btn btn-outline-danger btn-sm">Hapus</button>
+    <button type="button" class="btn btn-outline-success btn-sm">
+      Selesai
+    </button>
+  </div>
+</div>
+
+<!-- Modal Input Hutang -->
+<div
+  class="modal fade"
+  id="modalInputHutang"
+  tabindex="-1"
+  aria-labelledby="modalInputHutangLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalInputHutangLabel">
+          Tambah Hutang
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <label for="inputPeminjam" class="col-sm-2 col-form-label"
+            >Peminjam</label
+          >
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPeminjam" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputTotal" class="col-sm-2 col-form-label">Total</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputTotal" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Tutup
+        </button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
