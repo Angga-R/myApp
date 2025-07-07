@@ -1,0 +1,216 @@
+<div class="mb-3 row">
+  <div class="col-sm-10">
+    <input type="password" class="form-control" id="inputPassword" />
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary">Tambah</button>
+  </div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-header">
+    <b>Rupiah</b>
+    <button
+      type="button"
+      class="btn btn-success btn-sm"
+      data-bs-toggle="modal"
+      data-bs-target="#modalInputRupiah"
+    >
+      +
+    </button>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Penyimpanan</th>
+        <th scope="col">Jumlah</th>
+        <th scope="col">Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">-</th>
+        <td>Dana</td>
+        <td>300.000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">-</th>
+        <td>Bank Mandiri</td>
+        <td>3.000.000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">-</th>
+        <td>Bank BCA</td>
+        <td>3.200.000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="card-footer text-end">Total : Rp. 6.500.000,-</div>
+</div>
+
+<div class="card mb-3">
+  <div class="card-header">
+    <b>Yen</b>
+    <button
+      type="button"
+      class="btn btn-success btn-sm"
+      data-bs-toggle="modal"
+      data-bs-target="#modalInputYen"
+    >
+      +
+    </button>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Penyimpanan</th>
+        <th scope="col">Jumlah</th>
+        <th scope="col">Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">-</th>
+        <td>Yucho</td>
+        <td>30.0000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">-</th>
+        <td>Smile</td>
+        <td>3.0000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">-</th>
+        <td>PayPay</td>
+        <td>2000</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Hapus</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="card-footer text-end">Total : 33.2000円</div>
+</div>
+
+<!-- Modal Input Rupiah -->
+<div
+  class="modal fade"
+  id="modalInputRupiah"
+  tabindex="-1"
+  aria-labelledby="modalInputRupiahLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalInputRupiahLabel">
+          Simpanan (Rupiah)
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <label for="inputPenyimpanan" class="col-sm-2 col-form-label"
+            >Penyimpanan</label
+          >
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPenyimpanan" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputJumlah" class="col-sm-2 col-form-label"
+            >Jumlah</label
+          >
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputJumlah" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Tutup
+        </button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Input Yen -->
+<div
+  class="modal fade"
+  id="modalInputYen"
+  tabindex="-1"
+  aria-labelledby="modalInputYenLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalInputRupiahLabel">
+          Simpanan (Yen)
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <label for="inputPenyimpanan" class="col-sm-2 col-form-label"
+            >Penyimpanan</label
+          >
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPenyimpanan" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="inputJumlah" class="col-sm-2 col-form-label"
+            >Jumlah</label
+          >
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="inputJumlah" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Tutup
+        </button>
+        <button type="button" class="btn btn-primary">Simpan</button>
+      </div>
+    </div>
+  </div>
+</div>
