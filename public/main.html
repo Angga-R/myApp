@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/sidebar.min.css" />
     <style>
@@ -42,7 +42,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('data-akun-bank.html', 'Data akun bank')"
+            onclick="loadContent('data-akun/data-akun-bank.html', 'Data akun bank')"
           >
             <i class="fas fa-users"></i>
             <span>Data akun bank</span>
@@ -51,7 +51,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('data-akun-sosmed.html', 'Data akun sosial media')"
+            onclick="loadContent('data-akun/data-akun-sosmed.html', 'Data akun sosial media')"
           >
             <i class="fas fa-users"></i>
             <span>Data akun sosial media</span>
@@ -60,7 +60,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('data-akun-game.html', 'Data akun game')"
+            onclick="loadContent('data-akun/data-akun-game.html', 'Data akun game')"
           >
             <i class="fas fa-users"></i>
             <span>Data akun game</span>
@@ -69,7 +69,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('data-akun-lainnya.html', 'Data akun lainnya')"
+            onclick="loadContent('data-akun/data-akun-lainnya.html', 'Data akun lainnya')"
           >
             <i class="fas fa-users"></i>
             <span>Data akun lainnya</span>
@@ -80,7 +80,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('simpanan.html', 'Simpanan')"
+            onclick="loadContent('keuangan/simpanan.html', 'Simpanan')"
           >
             <i class="fas fa-users"></i>
             <span>Simpanan</span>
@@ -89,14 +89,17 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('tabungan.html', 'Tabungan')"
+            onclick="loadContent('keuangan/tabungan.html', 'Tabungan')"
           >
             <i class="fas fa-users"></i>
             <span>Tabungan</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" onclick="loadContent('hutang.html', 'Hutang')">
+          <a
+            class="nav-link"
+            onclick="loadContent('keuangan/hutang.html', 'Hutang')"
+          >
             <i class="fas fa-envelope"></i>
             <span>Hutang</span>
           </a>
@@ -104,7 +107,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            onclick="loadContent('pinjaman.html', 'Pinjaman')"
+            onclick="loadContent('keuangan/pinjaman.html', 'Pinjaman')"
           >
             <i class="fas fa-envelope"></i>
             <span>Pinjaman</span>
@@ -113,7 +116,10 @@
         <hr class="sidebar-divider" />
         <div class="sidebar-heading">Code Sheet</div>
         <li class="nav-item">
-          <a class="nav-link" href="/admin/data_user">
+          <a
+            class="nav-link"
+            onclick="loadContent('code-sheet/java.html', 'Java')"
+          >
             <i class="fas fa-users"></i>
             <span>Java</span>
           </a>
@@ -176,7 +182,7 @@
       </div>
     </div>
 
-    <script src="../services/page-service.js"></script>
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/page-service.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

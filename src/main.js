@@ -1,4 +1,6 @@
 import { BrowserWindow, app, ipcMain } from "electron";
+import Store from "electron-store";
+const store = new Store();
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -14,7 +16,7 @@ function createLoginWindow() {
     },
   });
 
-  loginWindow.loadFile("src/views/login.html");
+  loginWindow.loadFile("public/login.html");
 }
 
 function createMainWindow() {
@@ -26,7 +28,7 @@ function createMainWindow() {
     },
   });
 
-  mainWindow.loadFile("src/views/main.html");
+  mainWindow.loadFile("public/main.html");
 }
 
 app.whenReady().then(() => {
@@ -42,8 +44,14 @@ ipcMain.on("check-password", (event, inputPassword) => {
     loginWindow.close();
     createMainWindow();
   } else {
-    event.reply("wrong-password", "Password Salah2!");
+    event.reply("wrong-password", "Password Salah Test!");
   }
+});
+
+ipcMain.on("save-bank", (event, data) => {
+  store.set("bank", data);
+  console.info("data bank tersimpan : " + data);
+  event.reply("bank-saved");
 });
 
 app.on("window-all-closed", () => {
