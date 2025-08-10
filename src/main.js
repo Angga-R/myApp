@@ -1,6 +1,5 @@
 import { BrowserWindow, app, ipcMain } from "electron";
-import Store from "electron-store";
-const store = new Store();
+import store from "./store.js";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -52,6 +51,11 @@ ipcMain.on("save-bank", (event, data) => {
   store.set("bank", data);
   console.info("data bank tersimpan : " + data);
   event.reply("bank-saved");
+});
+
+ipcMain.on("get-all-bank", (event) => {
+  const data = store.get("bank");
+  event.reply("getted-all-bank", data);
 });
 
 app.on("window-all-closed", () => {

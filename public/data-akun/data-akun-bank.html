@@ -248,30 +248,6 @@
   </div>
 </div>
 
-<script>
-  function saveDataBank() {
-    const type = document.getElementById("selectType").value;
-    const bankName = document.getElementById("inputBank").value;
-    const id = document.getElementById("inputId").value;
-    const name = document.getElementById("inputName").value;
-    const phone = document.getElementById("inputPhone").value;
-    const email = document.getElementById("inputEmail").value;
-    const password = document.getElementById("inputPassword").value;
-    const pin = document.getElementById("inputPIN").value;
+<div class="data-bank"></div>
 
-    window.api.saveBank({
-      type,
-      bankName,
-      id,
-      name,
-      phone,
-      email,
-      password,
-      pin,
-    });
-  }
-
-  window.api.onBankSaved(() => {
-    alert("Data bank berhasil disimpan");
-  });
-</script>
+<script src="../../script/data-akun/data-akun-bank.js"></script>
